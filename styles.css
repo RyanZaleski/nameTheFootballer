@@ -1,0 +1,212 @@
+*  {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+
+}
+
+body {
+    background-color: #181818;
+    color: white;
+}
+
+/************ MOBILE QUERIES ************/
+
+@media screen and (max-width:767px){
+
+/******** MOBILE HEADER *********/
+
+.hidden {
+	display: none;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	border-bottom: 2px solid white;
+}
+
+header i {
+	font-size: 2rem;
+	
+}
+
+header h1 {
+	font-size: 1.75rem;
+	font-family: 'Cinzel', serif;
+	line-height: 2rem;
+	letter-spacing: 0.15rem;
+	text-align: center;
+}
+
+/******** MOBILE HOW TO PLAY *********/
+
+.howToPlay {
+	border: 1px solid white;
+	margin: 10px;
+	background: #2e2e2e;
+	padding: 1.5rem;
+	display: none;
+	flex-direction: column;
+	gap: 15px;
+	
+	
+}
+
+.howToPlayHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.howToPlayHeader i {
+	font-size: 1.5rem;
+	color: rgb(127, 127, 127);
+}
+
+.howToPlay h1 {
+	font-size: 1rem;
+	font-family: 'Archivo', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.10rem;
+}
+
+.howToPlay div {
+	display: flex;
+	gap: 25px;
+	align-items: center;
+	text-align: left;
+	
+}
+
+.howToPlay div i {
+	font-size: 1.5rem;
+	color: rgb(131, 131, 131);
+}
+
+.howToPlay div p {
+	font-family: 'Archivo', sans-serif;
+	font-size: 0.9rem;
+	line-height: 1.15rem;
+	width: 90%;
+	letter-spacing: 0.075rem;
+	padding: 0 20px 0 0;
+}
+
+.play {
+	align-self: center;
+	background: #0500FF;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 4px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	letter-spacing: 0.1rem;
+	font-family: 'Archivo', sans-serif;
+	font-weight: 800;
+}
+
+.gameSection {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 300;
+	font-size: 1.2rem;
+	font-family: 'Source Serif Pro', serif;
+	padding: 30px;
+	line-height: 1.75rem;
+}
+
+.gameSection ol {
+	align-self: flex-start
+}
+
+
+
+.gameSection input {
+    border: none;
+	width: 85%;
+	margin-bottom: 20px;
+	font: inherit;
+	padding: 0.9rem;
+	text-align: center;
+	background: rgba(77, 77, 77, 0.511);
+	border-radius: 0.5rem;
+	opacity: 1;
+}
+
+.gameSection a{
+	width: 85%;
+	font: inherit;
+	font-family: 'Archivo', sans-serif;
+	background: #0500FF;
+	padding: 0.9rem;
+	border-radius: 0.5rem;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+
+
+
+input[type=text]{
+	color: white;
+	opacity: 1;
+}
+
+
+
+
+}
+
