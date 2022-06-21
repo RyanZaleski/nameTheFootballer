@@ -101,10 +101,7 @@ function result(){
 		document.querySelector('.correctScore').innerHTML = `You guessed todays footballer in ${counter + 1} attempts`
 	}
 
-
-	console.log(counter)
-
-	if (counter === 1) {
+ 	if (counter === 1) {
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[3]));
 		li.setAttribute('id', 'four');
 		ul.appendChild(li)
@@ -144,7 +141,6 @@ function result(){
 		li.setAttribute('id', 'five');
 		ul.appendChild(li)
 		console.log(li.id)
-
 	}
 }
 	
