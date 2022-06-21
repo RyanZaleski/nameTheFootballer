@@ -1,3 +1,5 @@
+
+
 /**** FUNCTIONS TO OPEN AND CLOSE HOW TO PLAY SECTION ****/
 
 document.querySelectorAll('.exit').forEach(elem => elem.addEventListener('click', hide))
@@ -66,8 +68,8 @@ let rodriguez = {
 
 let footballers = [ibrahimavic, ferdinand, fabregas, milner, lampard, lukaku, lewandowski, rodriguez]
 
-console.log(footballers[0].fullName)
-console.log(footballers[0].lastName)
+console.log(footballers)
+
 
 
 
@@ -88,14 +90,19 @@ document.querySelector('#button').addEventListener('click', result)
 
 let counter = 0
 
+console.log(footballers[0].lastName.toLowerCase())
+console.log(footballers[0].fullName.toLowerCase())
+
 function result(){
 	let inputedAnswer = document.querySelector('input').value
 	let ul = document.getElementById("list")
 	let li = document.createElement("li")
 	
-    if (inputedAnswer.toLowerCase() !== 'ibrahimavic' ){
+    if ((inputedAnswer.toLowerCase() !== footballers[0].fullName.toLowerCase()) && (inputedAnswer.toLowerCase() !== footballers[0].lastName.toLowerCase())){
 		counter = counter + 1
-	} else { 
+		document.getElementById('result').value = "";
+
+	 } else {
 		document.querySelector('.winner').style.display = 'flex'
 		document.querySelector('.gameSection').style.display = 'none'
 		document.querySelector('.correctScore').innerHTML = `You guessed todays footballer in ${counter + 1} attempts`
@@ -116,38 +123,40 @@ function result(){
 
 	} else if (counter === 3){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[5]));
-		li.setAttribute('id', 'five');
+		li.setAttribute('id', 'six');
 		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 
 	} else if (counter === 4){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[6]));
-		li.setAttribute('id', 'five');
+		li.setAttribute('id', 'seven');
 		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 
 	}  else if (counter === 5){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[7]));
-		li.setAttribute('id', 'five');
+		li.setAttribute('id', 'eight');
 		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 
 	} else if (counter === 6){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[8]));
-		li.setAttribute('id', 'five');
+		li.setAttribute('id', 'nine');
 		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 
 	} else if (counter === 7){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[9]));
-		li.setAttribute('id', 'five');
+		li.setAttribute('id', 'ten');
 		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
+	} else if (counter > 7) {
+		alert('Fail')
 	}
 }
 	
