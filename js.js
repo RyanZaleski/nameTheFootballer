@@ -7,6 +7,7 @@ document.querySelectorAll('.exit').forEach(elem => elem.addEventListener('click'
 function hide(){
 	document.querySelector('#howToPlay').style.display = 'none'
 	document.querySelector('.gameSection').style.display = 'flex'
+	document.querySelector('.winner').style.display = 'none'
 }
 
 document.querySelector('.showHowToPlay').addEventListener('click', show)
