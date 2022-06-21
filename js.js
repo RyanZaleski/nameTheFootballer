@@ -104,41 +104,48 @@ function result(){
  	if (counter === 1) {
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[3]));
 		li.setAttribute('id', 'four');
+		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 	} else if (counter === 2){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[4]));
 		li.setAttribute('id', 'five');
+		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 
 	} else if (counter === 3){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[5]));
 		li.setAttribute('id', 'five');
+		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 
 	} else if (counter === 4){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[6]));
 		li.setAttribute('id', 'five');
+		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 
 	}  else if (counter === 5){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[7]));
 		li.setAttribute('id', 'five');
+		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 
 	} else if (counter === 6){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[8]));
 		li.setAttribute('id', 'five');
+		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 
 	} else if (counter === 7){
 		li.appendChild(document.createTextNode(ibrahimavic.listOfPlayers[9]));
 		li.setAttribute('id', 'five');
+		li.setAttribute('class', 'animate__animated animate__backInLeft')
 		ul.appendChild(li)
 		console.log(li.id)
 	}

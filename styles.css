@@ -56,6 +56,16 @@ body {
 
 @media screen and (max-width:767px){
 
+/****** ANIMATION DELAY *******/
+
+.twoSecondDelay {
+	animation-delay: 1.5s;
+}
+
+.fourSecondDelay {
+	animation-delay: 3s;
+}
+
 /******** MOBILE HEADER *********/
 
 .hidden {
